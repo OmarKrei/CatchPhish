@@ -18,6 +18,66 @@ As mentioned above, SMB's are the most vulnerble, due to various factors like, l
 ### Brief overview
 
 ### Full Data Dictionary
+# Data Dictionary
+
+| Column Name                  | Data Type  | Description |
+|------------------------------|-----------|-------------|
+| **FILENAME**                 | object    | Name of the file containing the URL. |
+| **URL**                      | object    | The full URL being analyzed. |
+| **URLLength**                | int64     | Length of the URL in characters. |
+| **Domain**                   | object    | The domain name extracted from the URL. |
+| **DomainLength**             | int64     | Length of the domain name. |
+| **IsDomainIP**               | int64     | Indicator if the domain is an IP address (1 = Yes, 0 = No). |
+| **TLD**                      | object    | The top-level domain (e.g., .com, .org). |
+| **URLSimilarityIndex**       | float64   | Similarity score of the URL compared to known legitimate domains. |
+| **CharContinuationRate**     | float64   | Measure of continuous character sequences in the URL. |
+| **TLDLegitimateProb**        | float64   | Probability that the TLD belongs to a legitimate site. |
+| **URLCharProb**              | float64   | Probability of character distribution in the URL being legitimate. |
+| **TLDLength**                | int64     | Length of the top-level domain. |
+| **NoOfSubDomain**            | int64     | Number of subdomains in the URL. |
+| **HasObfuscation**           | int64     | Indicates if the URL contains obfuscation techniques (1 = Yes, 0 = No). |
+| **NoOfObfuscatedChar**       | int64     | Number of obfuscated characters in the URL. |
+| **ObfuscationRatio**         | float64   | Ratio of obfuscated characters in the URL. |
+| **NoOfLettersInURL**         | int64     | Number of letters in the URL. |
+| **LetterRatioInURL**         | float64   | Ratio of letters in the URL. |
+| **NoOfDigitsInURL**          | int64     | Number of digits in the URL. |
+| **DigitRatioInURL**          | float64   | Ratio of digits in the URL. |
+| **NoOfEqualsInURL**          | int64     | Number of equal signs (=) in the URL. |
+| **NoOfQMarkInURL**           | int64     | Number of question marks (?) in the URL. |
+| **NoOfAmpersandInURL**       | int64     | Number of ampersands (&) in the URL. |
+| **NoOfOtherSpecialCharsInURL** | int64   | Number of special characters in the URL. |
+| **SpecialCharRatioInURL**    | float64   | Ratio of special characters in the URL. |
+| **ISHTTPS**                  | int64     | Indicates if the URL uses HTTPS (1 = Yes, 0 = No). |
+| **LineOfCode**               | int64     | Number of lines of code in the webpage source. |
+| **LargestLineLength**        | int64     | Length of the longest line of code in the webpage source. |
+| **HasTitle**                 | int64     | Indicates if the webpage has a title tag (1 = Yes, 0 = No). |
+| **Title**                    | object    | The title of the webpage. |
+| **DomainTitleMatchScore**    | float64   | Similarity score between the domain and webpage title. |
+| **URLTitleMatchScore**       | float64   | Similarity score between the URL and webpage title. |
+| **HasFavicon**               | int64     | Indicates if the webpage has a favicon (1 = Yes, 0 = No). |
+| **Robots**                   | int64     | Indicates if the webpage has a robots.txt file (1 = Yes, 0 = No). |
+| **IsResponsive**             | int64     | Indicates if the webpage is mobile-responsive (1 = Yes, 0 = No). |
+| **NoOfURLRedirect**          | int64     | Number of times the URL redirects to another page. |
+| **NoOfSelfRedirect**         | int64     | Number of times the URL redirects to itself. |
+| **HasDescription**           | int64     | Indicates if the webpage has a meta description (1 = Yes, 0 = No). |
+| **NoOfPopup**                | int64     | Number of popups found on the webpage. |
+| **NoOfiFrame**               | int64     | Number of iframe elements in the webpage. |
+| **HasExternalFormSubmit**    | int64     | Indicates if the page submits forms to an external site (1 = Yes, 0 = No). |
+| **HasSocialNet**             | int64     | Indicates if the webpage contains social media links (1 = Yes, 0 = No). |
+| **HasSubmitButton**          | int64     | Indicates if the webpage has a submit button (1 = Yes, 0 = No). |
+| **HasHiddenFields**          | int64     | Indicates if the webpage contains hidden input fields (1 = Yes, 0 = No). |
+| **HasPasswordField**         | int64     | Indicates if the webpage has a password input field (1 = Yes, 0 = No). |
+| **Bank**                     | int64     | Indicates if the webpage contains banking-related terms (1 = Yes, 0 = No). |
+| **Pay**                      | int64     | Indicates if the webpage contains payment-related terms (1 = Yes, 0 = No). |
+| **Crypto**                   | int64     | Indicates if the webpage contains cryptocurrency-related terms (1 = Yes, 0 = No). |
+| **HasCopyrightInfo**         | int64     | Indicates if the webpage includes copyright information (1 = Yes, 0 = No). |
+| **NoOfImage**                | int64     | Number of images on the webpage. |
+| **NoOfCSS**                  | int64     | Number of CSS files linked in the webpage. |
+| **NoOfJS**                   | int64     | Number of JavaScript files linked in the webpage. |
+| **NoOfSelfRef**              | int64     | Number of self-references in the webpage. |
+| **NoOfEmptyRef**             | int64     | Number of empty references in the webpage. |
+| **NoOfExternalRef**          | int64     | Number of external references in the webpage. |
+| **label**                    | int64     | The classification label (e.g., 0 for legitimate, 1 for phishing). |
 
 ## 3. Project WorkFlow
 
