@@ -8,6 +8,7 @@ Cyber crime is on an upwards trajectory and with Generative AI tools becoming re
 
 So why don't we just get anti-virus & anti-malware security and call it a day? Well, security is like an onion, the more layers of security you have, the more protected you are. Common security suites like McAfee, Bitbolid, and Sentinal 1 are good for stopping threats after mistakes were made, but what if we can avoid committing the mistake completely? This is where building a system that predicts whether a URL is legitimate or a phishing attempt provide immeasuarable value. It's that extra layer of security that helps protect SMB's from total ruin. 
 ### Who's The Victim in All of This? 
+As mentioned above, SMB's are the most vulnerble, due to various factors like, lack of education on the subject matter, cannot afford paying for
 
 ### The Value Added 
 
