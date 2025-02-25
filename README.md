@@ -1,5 +1,6 @@
 # CatchPhish - An ML Approach to Catching Phishing URL's 
 Author: Omar Kreidie
+Link to Dataset: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
 
 ## 1. Project Overview 
 ### Problem Area
