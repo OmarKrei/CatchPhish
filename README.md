@@ -93,6 +93,30 @@ The data was retrieved from [PHIUSIIL Phishing URL Dataset](https://archive.ics.
 | **label**                    | int64     | The classification label (e.g., 0 for legitimate, 1 for phishing). |
 
 ## 3. Project WorkFlow
+### 1. Data Collection:
+- Get a dataset: [PHIUSIIL Phishing URL Dataset](https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset)
+- Load the data into Pandas and turn it into a DataFrame to begin analysis
+
+### 2. Data Preprocessing/Wranglign + Preliminary EDA:
+-  Handling missing values or duplicates if needed
+-  Analyze data quality
+-  Feature Engineering - Convert categorical data types to dummie variables where applicable 
+-  Analyze relationships between features
+-  Visualize patterns 
+
+### 3. Full Exploratory Data Analysis (EDA) + Baseline Modeling: 
+- More distributions and visualizations! 
+- Hypothesis Testing - find which features have a statistically significant impact on the target variable 
+- Explore and evaluate relationships between different features and target variable
+- Build a preliminary Logistic Model 
+
+### 4. Advanced Modeling:
+Using these models because they are most useful for categorical classification 
+- Refine Logistic Model 
+- Build a Random Forest model because in a dataset with 56 features, Random Forest will allow me ot analyze feature importance
+- Build an XGBoost model because it efficiently handles both numerical and categorical features
+- Attempt to build a Neural Network 
+
 
 ## 4. Repository Navigation
 ### Notebooks
