@@ -6,21 +6,29 @@ Author: Omar Kreidie
 ### Problem Area
 Cybercrime is on an upwards trajectory and with Generative AI tools becoming readily accessible to anyone with an internet connection, it's only a matter of time before even the laziest of scammers start fooling us. It's not difficult to imagine that large corporations have the IT infrastructure and man power to protect their employees from cyber threats, but what about Small to Medium Businesses (SMB's)? According to a cyber crime study by Accenture, 43% of all cyberattacks are on SMB's and as stated by the World Economic Forum, 95% of all cyber breaches are attributed to human error [1]. 
 
-So why don't we just get anti-virus & anti-malware security and call it a day? Well, security is like an onion, the more layers of security you have, the more protected you are. Common security suites like McAfee, Bitbolid, and Sentinal 1 are good for stopping many kinds of harmful attacks and react very well after mistakes where made, but what if we can avoid committing the mistake completely? This is where building a system that predicts whether a URL is legitimate or a phishing attempt provide immeasuarable value. It's that extra layer of security that helps protect SMB's from total ruin. 
+So why don't we just get anti-virus & anti-malware security and call it a day? Well, security is like an onion, the more layers of security you have, the more protected you are. Common security suites like McAfee, Bitbolid, and Sentinal 1 are good for stopping many kinds of harmful attacks and react very well after mistakes where made, but what if we can avoid committing the mistake completely? This is where building a system that predicts whether a URL is legitimate or a phishing attempt provide immeasurable value. It's that extra layer of security that helps protect SMB's from total ruin. 
 ### Who's The Victim in All of This? 
 As mentioned in my problem statement, SMB's are the most vulnerable and that is because of various factors like: 
 
 - SMB's often avoid investing in effective security for many reasons. The most common reasons are, lack of education in the field, cost, and from my experience in the field, optimism bias [2].  
-- Scammers often target SMB's because they are aware of the lack of security and also recognize that SMB's are incapable of reacting effectively after an attack has taken place [3]. 
+- Scammers often target SMB's because they are aware of the lack of security and also recognize that SMB's are incapable of reacting effectively after an attack has taken place [3].
 
 ### The Value Added 
 
-The objective for this project is to build an ML model that can detect and classify phishing URL's. Given that URL's can be sent through various mediums like E-Mails, Text Messages, and, Social Networks. Building a model that can accurately decipher phishing from legitimate using only the URL, will add an extra layer of security to protect anyone from that dreadful human error. 
+The objective for this project is to build an ML model that can detect and classify phishing URL's. Given that URL's can be sent through various mediums like E-Mails, Text Messages, and, Social Networks. Building a model that can accurately decipher phishing from legitimate using only the URL, will add an extra layer of security to protect anyone from that costly human error. 
 
 ### The Data Science Solution
 
+Relying on humans to classify phishing URL's is a losing battle, especially with how powerful and easy to use Generative AI models are becoming. E-mails, messages, and all forms of mediums in which you can receive a phishing URL will be replicated to astounding percision. That's why building a model that can classify phishing from legitimate is more crucial now than ever. 
+
+In this project I will do the following: 
+- Data Wrangling + Preliminary EDA: Clean the dataset, feature selection, and preliminary EDA.
+- Data Pre-Processing and EDA: Hypothesis testing, Statistical analysis, and building a Logistic Regression model to help filter out the features. I am predicting that there will be a significant amount of collinearity.
+- Predictive modeling: In this section, I will build models using Random Forest classification, XGBoost, and Neural Networks. Ideally, I can build a model with an accuracy range above 95%. 
+
 ## 2. Data Information + Dictionary
 ### Brief overview
+The data was retrieved from [PHIUSIIL Phishing URL Dataset](https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset). The dataset has 235,795 Rows and 56 Features. The target feature is the 'label' common which is binary. 0 = Phishing and 1 = Legitimate. The data is fairly evenly split, which avoids class imbalance, helping us build a stronger predictive model. there are 134850 Legitimate and 100945 Phishing URL's. 
 
 ### Full Data Dictionary
 # Data Dictionary
