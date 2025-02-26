@@ -4,17 +4,22 @@ Author: Omar Kreidie
 
 ## 1. Project Overview 
 ### Problem Area
-Cyber crime is on an upwards trajectory and with Generative AI tools becoming readily accessible to anyone with an internet connection, it's only a matter of time before even the laziest of scammers start fooling us. It's not difficult to imagine that large corporations have the IT infrastructure and man power to protect their employees from cyber threats, but what about Small to Medium Businesses (SMB's)? According to a cyber crime study by Accenture, 43% of all cyber attacks are on SMB's and as stated by the World Economic Forum, 95% of all cyber breaches are attributed to human error. 
+Cybercrime is on an upwards trajectory and with Generative AI tools becoming readily accessible to anyone with an internet connection, it's only a matter of time before even the laziest of scammers start fooling us. It's not difficult to imagine that large corporations have the IT infrastructure and man power to protect their employees from cyber threats, but what about Small to Medium Businesses (SMB's)? According to a cyber crime study by Accenture, 43% of all cyberattacks are on SMB's and as stated by the World Economic Forum, 95% of all cyber breaches are attributed to human error [1]. 
 
-So why don't we just get anti-virus & anti-malware security and call it a day? Well, security is like an onion, the more layers of security you have, the more protected you are. Common security suites like McAfee, Bitbolid, and Sentinal 1 are good for stopping threats after mistakes were made, but what if we can avoid committing the mistake completely? This is where building a system that predicts whether a URL is legitimate or a phishing attempt provide immeasuarable value. It's that extra layer of security that helps protect SMB's from total ruin. 
+So why don't we just get anti-virus & anti-malware security and call it a day? Well, security is like an onion, the more layers of security you have, the more protected you are. Common security suites like McAfee, Bitbolid, and Sentinal 1 are good for stopping many kinds of harmful attacks and react very well after mistakes where made, but what if we can avoid committing the mistake completely? This is where building a system that predicts whether a URL is legitimate or a phishing attempt provide immeasuarable value. It's that extra layer of security that helps protect SMB's from total ruin. 
 ### Who's The Victim in All of This? 
-As mentioned above, SMB's are the most vulnerble, due to various factors like, lack of education on the subject matter, cannot afford paying for
+As mentioned in my problem statement, SMB's are the most vulnerable and that is because of various factors like: 
+
+- SMB's often avoid investing in effective security for many reasons. The most common reasons are, lack of education in the field, cost, and from my experience in the field, optimism bias [2].  
+- Scammers often target SMB's because they are aware of the lack of security and also recognize that SMB's are incapable of reacting effectively after an attack has taken place [3]. 
 
 ### The Value Added 
 
+The objective for this project is to build an ML model that can detect and classify phishing URL's. Given that URL's can be sent through various mediums like E-Mails, Text Messages, and, Social Networks. Building a model that can accurately decipher phishing from legitimate using only the URL, will add an extra layer of security to protect anyone from that dreadful human error. 
+
 ### The Data Science Solution
 
-## 2. Data Infomration + Dictionary
+## 2. Data Information + Dictionary
 ### Brief overview
 
 ### Full Data Dictionary
@@ -85,3 +90,10 @@ As mentioned above, SMB's are the most vulnerble, due to various factors like, l
 ### Notebooks
 
 #### 1_DataWrangling + Prelim EDA
+
+
+
+#### Refrences: 
+<br> [1] https://smallbiztrends.com/small-business-cybersecurity/
+<br> [2] https://www.ibc.ca/news-insights/news/small-businesses-are-underestimating-their-cyber-risk-despite-increased-threats
+<br> [3] https://www.forbes.com/sites/edwardsegal/2022/03/30/cyber-criminals/
