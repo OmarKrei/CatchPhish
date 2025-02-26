@@ -125,5 +125,5 @@ Using these models because they are most useful for categorical classification
 
 #### <br> References: 
 [1] https://smallbiztrends.com/small-business-cybersecurity/
-[2] https://www.ibc.ca/news-insights/news/small-businesses-are-underestimating-their-cyber-risk-despite-increased-threats
-[3] https://www.forbes.com/sites/edwardsegal/2022/03/30/cyber-criminals/
+<br>[2] https://www.ibc.ca/news-insights/news/small-businesses-are-underestimating-their-cyber-risk-despite-increased-threats
+<br>[3] https://www.forbes.com/sites/edwardsegal/2022/03/30/cyber-criminals/
